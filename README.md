@@ -1,4 +1,4 @@
-- 👋 Hi, @serge-mugisha here!
+- 👋 Hi, Serge Mugisha here!
 - 👩‍💻 Software Developer
 - 🎨 UI Designer
 - 👀 Spectating
