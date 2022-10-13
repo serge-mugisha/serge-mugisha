@@ -1,0 +1,6 @@
+- 👋 Hi, @serge-mugisha here!
+- 👩‍💻 Software Developer
+- 🎨 UI Designer
+- 👀 Spectating
+- 🕸️https://sergemugisha.com/
+- 📫 me@sergemugisha.com
