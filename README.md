@@ -2,5 +2,7 @@
 - 💻 Software Developer
 - 🎨 UI Designer
 - 👀 Spectating
-- 🕸️https://sergemugisha.com/
 - 📫 me@sergemugisha.com
+- 🕸️ https://sergemugisha.com/
+- 🔗 https://www.linkedin.com/in/serge-mugisha
+- 🖼️ https://www.behance.net/serge-mugisha
