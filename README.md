@@ -1,5 +1,5 @@
 - 👋 Hi, Serge Mugisha here!
-- 👩‍💻 Software Developer
+- 💻 Software Developer
 - 🎨 UI Designer
 - 👀 Spectating
 - 🕸️https://sergemugisha.com/
