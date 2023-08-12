@@ -1,7 +1,7 @@
-- 👋 Hi, Serge Mugisha here!
+- 👋 Hey there, Serge Mugisha here!
 - 💻 Software Developer
 - 🎨 UI Designer
-- 👀 Spectating
+- 👀 Tech, Logic and Music Enthusiast
 - 📫 me@sergemugisha.com
 - 🕸️ https://sergemugisha.com/
 - 🔗 https://www.linkedin.com/in/serge-mugisha
