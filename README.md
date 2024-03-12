@@ -1,4 +1,4 @@
-- 👋 Hey there, Serge Mugisha here!
+- 👋 Serge Mugisha here!
 - 💻 Software Developer
 - 🎨 UI Designer
 - 👀 Tech, Logic and Music Enthusiast
