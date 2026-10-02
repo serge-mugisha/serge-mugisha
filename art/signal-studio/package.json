@@ -1,0 +1,12 @@
+{
+  "name": "signal-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.107 preview",
+    "check": "node build.mjs --check",
+    "build": "node build.mjs",
+    "render": "npx --yes hyperframes@0.8.107 render",
+    "publish": "npx --yes hyperframes@0.8.107 publish"
+  }
+}

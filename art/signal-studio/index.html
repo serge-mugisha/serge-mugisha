@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1200, initial-scale=1">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:"JetBrains Mono";src:url("assets/JetBrainsMono-Regular.ttf");font-weight:400}
+@font-face{font-family:"JetBrains Mono";src:url("assets/JetBrainsMono-Bold.ttf");font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{width:1200px;height:640px;overflow:hidden;background:#141a17}
+#root{position:relative;width:100%;height:100%;color:#f0f0e6;font-family:"JetBrains Mono",monospace;background:radial-gradient(ellipse at 80% 40%,#1c261d 0%,#141a17 65%)}
+.poster{width:100%;height:100%;padding:44px 56px 0}.masthead{display:flex;justify-content:space-between;align-items:center;font-size:16px;letter-spacing:.05em}
+.wordmark{display:flex;align-items:center;gap:14px}.mark{width:34px;height:34px}.edition{color:#b8c4b9;font-size:14px;letter-spacing:0}
+.stage{height:492px;position:relative;display:flex;align-items:center}.identity{position:relative;z-index:2;margin-top:-20px}
+h1{font-size:96px;line-height:1.05;letter-spacing:-.065em;font-weight:700}h1 span{display:block}.dot{display:inline;color:#d3f99a}
+.role{color:#b8c4b9;font-size:19px;line-height:1.5;margin-top:26px;letter-spacing:-.04em;white-space:nowrap}
+.sculpture{position:absolute;right:-14px;top:34px;width:594px;height:422px}
+#headings{position:absolute;left:34px;top:0;display:flex;align-items:center;font-size:24px;width:800px;height:40px;color:#f0f0e6;white-space:pre}
+.console-prompt{color:#87af58;margin-right:14px}#console-cursor{display:inline-block;width:14px;height:25px;margin-left:4px;background:#d3f99a}
+.world-inner{position:relative;width:860px;height:610px;transform:scale(.69);transform-origin:top left}#world{width:860px;height:610px;display:block;overflow:visible}
+.footer{position:absolute;bottom:0;left:0;width:100%;height:70px;display:flex;padding:0 32px;border-top:1px solid #435047;background:#141a17}
+.footer a{flex:1;display:flex;align-items:center;justify-content:center;gap:14px;color:#b8c4b9;font-size:28px;text-decoration:none;letter-spacing:-.04em}.footer img{width:26px;height:26px}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1200" data-height="640">
+<div id="poster" class="poster clip" data-start="0" data-duration="12" data-track-index="0">
+<header class="masthead"><div class="wordmark"><svg id="github-mark" class="mark" viewBox="0 0 24 24" aria-label="GitHub"><g fill="#d3f99a"><rect x="6" y="1.5" width="1.5" height="1.5"/><rect x="7.5" y="1.5" width="1.5" height="1.5"/><rect x="9" y="1.5" width="1.5" height="1.5"/><rect x="10.5" y="1.5" width="1.5" height="1.5"/><rect x="12" y="1.5" width="1.5" height="1.5"/><rect x="13.5" y="1.5" width="1.5" height="1.5"/><rect x="15" y="1.5" width="1.5" height="1.5"/><rect x="16.5" y="1.5" width="1.5" height="1.5"/><rect x="4.5" y="3" width="1.5" height="1.5"/><rect x="6" y="3" width="1.5" height="1.5"/><rect x="7.5" y="3" width="1.5" height="1.5"/><rect x="9" y="3" width="1.5" height="1.5"/><rect x="10.5" y="3" width="1.5" height="1.5"/><rect x="12" y="3" width="1.5" height="1.5"/><rect x="13.5" y="3" width="1.5" height="1.5"/><rect x="15" y="3" width="1.5" height="1.5"/><rect x="16.5" y="3" width="1.5" height="1.5"/><rect x="18" y="3" width="1.5" height="1.5"/><rect x="3" y="4.5" width="1.5" height="1.5"/><rect x="4.5" y="4.5" width="1.5" height="1.5"/><rect x="6" y="4.5" width="1.5" height="1.5"/><rect x="7.5" y="4.5" width="1.5" height="1.5"/><rect x="9" y="4.5" width="1.5" height="1.5"/><rect x="10.5" y="4.5" width="1.5" height="1.5"/><rect x="12" y="4.5" width="1.5" height="1.5"/><rect x="13.5" y="4.5" width="1.5" height="1.5"/><rect x="15" y="4.5" width="1.5" height="1.5"/><rect x="16.5" y="4.5" width="1.5" height="1.5"/><rect x="18" y="4.5" width="1.5" height="1.5"/><rect x="19.5" y="4.5" width="1.5" height="1.5"/><rect x="1.5" y="6" width="1.5" height="1.5"/><rect x="3" y="6" width="1.5" height="1.5"/><rect x="4.5" y="6" width="1.5" height="1.5"/><rect x="9" y="6" width="1.5" height="1.5"/><rect x="12" y="6" width="1.5" height="1.5"/><rect x="13.5" y="6" width="1.5" height="1.5"/><rect x="18" y="6" width="1.5" height="1.5"/><rect x="19.5" y="6" width="1.5" height="1.5"/><rect x="21" y="6" width="1.5" height="1.5"/><rect x="1.5" y="7.5" width="1.5" height="1.5"/><rect x="3" y="7.5" width="1.5" height="1.5"/><rect x="4.5" y="7.5" width="1.5" height="1.5"/><rect x="18" y="7.5" width="1.5" height="1.5"/><rect x="19.5" y="7.5" width="1.5" height="1.5"/><rect x="21" y="7.5" width="1.5" height="1.5"/><rect x="0" y="9" width="1.5" height="1.5"/><rect x="1.5" y="9" width="1.5" height="1.5"/><rect x="3" y="9" width="1.5" height="1.5"/><rect x="4.5" y="9" width="1.5" height="1.5"/><rect x="18" y="9" width="1.5" height="1.5"/><rect x="19.5" y="9" width="1.5" height="1.5"/><rect x="21" y="9" width="1.5" height="1.5"/><rect x="22.5" y="9" width="1.5" height="1.5"/><rect x="0" y="10.5" width="1.5" height="1.5"/><rect x="1.5" y="10.5" width="1.5" height="1.5"/><rect x="3" y="10.5" width="1.5" height="1.5"/><rect x="4.5" y="10.5" width="1.5" height="1.5"/><rect x="18" y="10.5" width="1.5" height="1.5"/><rect x="19.5" y="10.5" width="1.5" height="1.5"/><rect x="21" y="10.5" width="1.5" height="1.5"/><rect x="22.5" y="10.5" width="1.5" height="1.5"/><rect x="0" y="12" width="1.5" height="1.5"/><rect x="1.5" y="12" width="1.5" height="1.5"/><rect x="3" y="12" width="1.5" height="1.5"/><rect x="4.5" y="12" width="1.5" height="1.5"/><rect x="18" y="12" width="1.5" height="1.5"/><rect x="19.5" y="12" width="1.5" height="1.5"/><rect x="21" y="12" width="1.5" height="1.5"/><rect x="22.5" y="12" width="1.5" height="1.5"/><rect x="0" y="13.5" width="1.5" height="1.5"/><rect x="1.5" y="13.5" width="1.5" height="1.5"/><rect x="3" y="13.5" width="1.5" height="1.5"/><rect x="4.5" y="13.5" width="1.5" height="1.5"/><rect x="18" y="13.5" width="1.5" height="1.5"/><rect x="19.5" y="13.5" width="1.5" height="1.5"/><rect x="21" y="13.5" width="1.5" height="1.5"/><rect x="22.5" y="13.5" width="1.5" height="1.5"/><rect x="1.5" y="15" width="1.5" height="1.5"/><rect x="3" y="15" width="1.5" height="1.5"/><rect x="4.5" y="15" width="1.5" height="1.5"/><rect x="6" y="15" width="1.5" height="1.5"/><rect x="16.5" y="15" width="1.5" height="1.5"/><rect x="18" y="15" width="1.5" height="1.5"/><rect x="19.5" y="15" width="1.5" height="1.5"/><rect x="21" y="15" width="1.5" height="1.5"/><rect x="1.5" y="16.5" width="1.5" height="1.5"/><rect x="3" y="16.5" width="1.5" height="1.5"/><rect x="6" y="16.5" width="1.5" height="1.5"/><rect x="7.5" y="16.5" width="1.5" height="1.5"/><rect x="13.5" y="16.5" width="1.5" height="1.5"/><rect x="15" y="16.5" width="1.5" height="1.5"/><rect x="16.5" y="16.5" width="1.5" height="1.5"/><rect x="18" y="16.5" width="1.5" height="1.5"/><rect x="19.5" y="16.5" width="1.5" height="1.5"/><rect x="21" y="16.5" width="1.5" height="1.5"/><rect x="1.5" y="18" width="1.5" height="1.5"/><rect x="3" y="18" width="1.5" height="1.5"/><rect x="4.5" y="18" width="1.5" height="1.5"/><rect x="7.5" y="18" width="1.5" height="1.5"/><rect x="15" y="18" width="1.5" height="1.5"/><rect x="16.5" y="18" width="1.5" height="1.5"/><rect x="18" y="18" width="1.5" height="1.5"/><rect x="19.5" y="18" width="1.5" height="1.5"/><rect x="21" y="18" width="1.5" height="1.5"/><rect x="3" y="19.5" width="1.5" height="1.5"/><rect x="4.5" y="19.5" width="1.5" height="1.5"/><rect x="15" y="19.5" width="1.5" height="1.5"/><rect x="16.5" y="19.5" width="1.5" height="1.5"/><rect x="18" y="19.5" width="1.5" height="1.5"/><rect x="19.5" y="19.5" width="1.5" height="1.5"/><rect x="4.5" y="21" width="1.5" height="1.5"/><rect x="6" y="21" width="1.5" height="1.5"/><rect x="7.5" y="21" width="1.5" height="1.5"/><rect x="15" y="21" width="1.5" height="1.5"/><rect x="16.5" y="21" width="1.5" height="1.5"/><rect x="18" y="21" width="1.5" height="1.5"/><rect x="7.5" y="22.5" width="1.5" height="1.5"/><rect x="15" y="22.5" width="1.5" height="1.5"/></g></svg><span>SERGE MUGISHA</span></div><span class="edition">Little world of things I do</span></header>
+<main class="stage"><div class="identity"><h1><span>SERGE</span><span>MUGISHA<span class="dot" style="display:inline">.</span></span></h1><p class="role">Software Engineer | Startup Builder</p></div>
+<div class="sculpture"><div class="world-inner"><div id="headings" aria-label="Build Things, Design, Music"><span class="console-prompt">&gt;</span><span id="console-text"></span><span id="console-cursor" aria-hidden="true"></span></div><svg id="world" viewBox="0 0 860 610" aria-label="Code and an image thumbnail share a contribution grid. Pac-Man dims its tiles and a pixel builder restores them with a hammer."><g id="cells"></g><g id="notes"></g><g id="pacman"></g><g id="builder" aria-label="Pixel builder placing contribution blocks"></g></svg></div></div></main>
+<footer class="footer"><a href="https://sergemugisha.com/"><img src="assets/icon-work.svg" alt="">Work</a><a href="https://www.behance.net/serge-mugisha"><img src="assets/icon-design.svg" alt="">Design</a><a href="https://www.linkedin.com/in/serge-mugisha"><img src="assets/icon-linkedin.svg" alt="">LinkedIn</a><a href="mailto:me@sergemugisha.com"><img src="assets/icon-email.svg" alt="">Email</a></footer></div></div>
+<script>
+    const ns='http://www.w3.org/2000/svg',COLS=41,ROWS=15,STEP=20,DURATION=12,BUILDER_GAP=18;
+    const colors=['#25332a','#435b36','#87af58','#d3f99a','#f0f0e6'];
+    const level=Array.from({length:COLS*ROWS},(_,i)=>((i%COLS*13+Math.floor(i/COLS)*7)%11===0?1:0));
+
+    function put(x,y,v=3){if(x>=0&&x<COLS&&y>=0&&y<ROWS){level[y*COLS+x]=v;}}
+    function line(x1,y1,x2,y2,v=3){const n=Math.max(Math.abs(x2-x1),Math.abs(y2-y1));for(let k=0;k<=n;k++)put(Math.round(x1+(x2-x1)*k/(n||1)),Math.round(y1+(y2-y1)*k/(n||1)),v);}
+    // Persistent code and image-thumbnail symbols occupy the same tile canvas.
+    // Bright ivory brackets make </> legible even when scaled down.
+    line(9,4,6,7,4);line(6,7,9,10,4);line(13,4,11,10,4);
+    line(15,4,18,7,4);line(18,7,15,10,4);
+    line(21,3,21,11,2);
+    // Familiar image-thumbnail outline, sun, and two mountain peaks.
+    line(25,3,37,3,3);line(25,11,37,11,3);
+    line(25,3,25,11,3);line(37,3,37,11,3);
+    put(28,5,4);put(29,5,4);put(28,6,4);put(29,6,4);
+    line(26,10,30,7,4);line(30,7,33,10,4);
+    line(31,9,34,6,4);line(34,6,36,9,4);
+    const route=[];
+    for(let x=0;x<COLS;x++)route.push([x,0]);
+    for(let y=1;y<ROWS;y++)route.push([COLS-1,y]);
+    for(let x=COLS-2;x>=0;x--)route.push([x,ROWS-1]);
+    for(let y=ROWS-2;y>0;y--)route.push([0,y]);
+    const routeIndex=new Map(route.map(([x,y],i)=>[y*COLS+x,i]));
+    const cells=level.map((v,i)=>{const r=document.createElementNS(ns,'rect');r.setAttribute('x',34+i%COLS*STEP);r.setAttribute('y',106+Math.floor(i/COLS)*STEP);r.setAttribute('width',15);r.setAttribute('height',15);r.setAttribute('rx',2);document.querySelector('#cells').append(r);return r;});
+    const musicSymbols=[
+      {name:'Beamed eighth notes',step:4,pixels:['...NNNN','...N..N','...N..N','...N..N','.NNN.NN','NNNNNNN','NNN.NNN']},
+      {name:'Treble (G) clef',step:3,pixels:["......N....", ".....NNN...", ".....NNN...", "....NN.N...", "....N..N...", "....N..N...", "....N.NN...", ".....NNN...", "....NNN....", "...NNN.....", "..NNNN.....", "..NN.N.....", ".NN..NNN...", ".NN.NNNNN..", ".N..NNNNNN.", ".N.NN.N..N.", ".N..N.N..N.", ".NN.N....N.", "..N....NNN.", "....N.NN...", ".......N...", ".......N...", "...NNN..N..", "...NNN..N..", "...NNN.N...", "....NNNN..."]},
+      {name:'Single eighth note',step:4,pixels:['...NN..','...NNN.','...N.NN','...N..N','...N...','...N...','.NNN...','NNNN...','NNN....']}
+    ];
+    const notes=[[68,150],[395,16],[756,149]].map(([x,y],index)=>{
+      const symbol=musicSymbols[index],g=document.createElementNS(ns,'g');
+      g.setAttribute('fill',index===1?colors[2]:colors[4]);g.setAttribute('aria-label',symbol.name);
+      symbol.pixels.forEach((row,yy)=>[...row].forEach((p,xx)=>{if(p==='N'){
+        const r=document.createElementNS(ns,'rect');r.setAttribute('x',xx*symbol.step);r.setAttribute('y',yy*symbol.step);
+        r.setAttribute('width',symbol.step);r.setAttribute('height',symbol.step);g.append(r);
+      }}));
+      document.querySelector('#notes').append(g);return {g,x,y,index};
+    });
+    const pac=document.querySelector('#pacman');
+    const pacPixels=[];
+    for(let y=0;y<10;y++)for(let x=0;x<10;x++){const dx=x-4.5,dy=y-4.5;if(dx*dx+dy*dy<=24){const r=document.createElementNS(ns,'rect');r.setAttribute('x',dx*3);r.setAttribute('y',dy*3);r.setAttribute('width',3);r.setAttribute('height',3);r.setAttribute('fill',colors[3]);pac.append(r);pacPixels.push({r,dx,dy});}}
+    const eye=document.createElementNS(ns,'rect');eye.setAttribute('x','1.5');eye.setAttribute('y','-7.5');eye.setAttribute('width','3');eye.setAttribute('height','3');eye.setAttribute('fill','#141a17');pac.append(eye);
+    // A second actor restores each tile on contact, instead of unexplained refilling.
+    const builder=document.querySelector('#builder'),builderPose=document.createElementNS(ns,'g');builder.append(builderPose);
+    const builderPattern=['...HHH...','..HHHHH..','.HHHHHHH.','..SSSES..','..SSSSS..','...SSS...','..JJJJ...','.JJJJJJ..','S.JJJJ.S.','..PPPP...','..PP.PP..','..PP.PP..','.BBB.BBB.'];
+    const builderColors={H:colors[4],S:'#cda36a',E:'#141a17',J:colors[3],P:colors[2],B:colors[4]},feet=[];
+    builderPattern.forEach((row,y)=>[...row].forEach((p,x)=>{if(p!=='.'){
+      const r=document.createElementNS(ns,'rect'),baseY=(y-13)*3;
+      r.setAttribute('x',(x-4.5)*3);r.setAttribute('y',baseY);r.setAttribute('width',3);r.setAttribute('height',3);r.setAttribute('fill',builderColors[p]);builderPose.append(r);
+      if(y>=10)feet.push({r,baseY,side:x<4.5?-1:1});
+    }}));
+    const hammer=document.createElementNS(ns,'g');builderPose.append(hammer);
+    for(const [x,y,w,h,color] of [[-1,-15,3,18,colors[2]],[-7,-19,16,6,colors[4]]]){
+      const r=document.createElementNS(ns,'rect');for(const [attr,val] of Object.entries({x,y,width:w,height:h,fill:color}))r.setAttribute(attr,val);hammer.append(r);
+    }
+    const phrases=['Build Things','Design','Music'];
+    const consoleText=document.querySelector('#console-text'),consoleCursor=document.querySelector('#console-cursor');
+    const state={seconds:0};
+    function paint(){
+      const t=((state.seconds%DURATION)+DURATION)%DURATION,phase=t/DURATION*Math.PI*2;
+      const position=t/DURATION*route.length,at=Math.floor(position),fraction=position-at;
+      const a=route[at%route.length],b=route[(at+1)%route.length];
+      cells.forEach((r,i)=>{
+        let v=level[i];
+        if(routeIndex.has(i)){
+          const age=(position-routeIndex.get(i)+route.length)%route.length;
+          // Pac-Man dims the tile; the following builder lights it on contact.
+          v=age<BUILDER_GAP?0:age<BUILDER_GAP+1.5?4:1+((i*7)%3);
+        }
+        r.setAttribute('fill',colors[v]);
+      });
+      const angle=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI;
+      pac.setAttribute('transform',`translate(${(41.5+(a[0]+(b[0]-a[0])*fraction)*STEP).toFixed(2)},${(113.5+(a[1]+(b[1]-a[1])*fraction)*STEP).toFixed(2)}) rotate(${angle})`);
+      const mouth=.12+.85*(.5-.5*Math.cos(t*Math.PI*8));
+      pacPixels.forEach(({r,dx,dy})=>r.style.opacity=dx>0&&Math.abs(dy)<dx*mouth?0:1);
+      const buildPosition=(position-BUILDER_GAP+route.length)%route.length,buildAt=Math.floor(buildPosition),buildFraction=buildPosition-buildAt;
+      const buildA=route[buildAt],buildB=route[(buildAt+1)%route.length];
+      builder.setAttribute('transform',`translate(${(41.5+(buildA[0]+(buildB[0]-buildA[0])*buildFraction)*STEP).toFixed(2)},${(113.5+(buildA[1]+(buildB[1]-buildA[1])*buildFraction)*STEP).toFixed(2)})`);
+      builderPose.setAttribute('transform',`scale(${buildB[0]<buildA[0]?-1:1},1)`);
+      const stride=Math.sin(buildPosition*Math.PI);
+      feet.forEach(({r,baseY,side})=>r.setAttribute('y',(baseY+side*stride*1.5).toFixed(2)));
+      hammer.setAttribute('transform',`translate(12,-16) rotate(${(-15+30*stride).toFixed(2)})`);
+      notes.forEach(({g,x,y,index})=>g.setAttribute('transform',`translate(${(x+5*Math.sin(phase+index*2)).toFixed(2)},${(y+14*Math.sin(phase*2+index*2)).toFixed(2)})`));
+      // Absolute-time typing keeps seeking and the GIF loop deterministic.
+      const phrase=phrases[Math.floor(t/4)],local=t%4;
+      let count=phrase.length;
+      if(local<.2)count=0;
+      else if(local<1.3)count=Math.floor((local-.2)/1.1*phrase.length);
+      else if(local>=3.1)count=Math.max(0,phrase.length-Math.floor((local-3.1)/.7*phrase.length));
+      consoleText.textContent=phrase.slice(0,count);
+      consoleCursor.style.opacity=t%1<.55?1:0;
+    }
+    paint();
+    const tl=gsap.timeline({paused:true});
+    tl.to(state,{seconds:DURATION,duration:DURATION,ease:'none',onUpdate:paint},0);
+    window.__timelines=window.__timelines||{};window.__timelines.main=tl;
+    window.renderSignalFrame=seconds=>{tl.seek(seconds);paint();};
+
+</script></body></html>

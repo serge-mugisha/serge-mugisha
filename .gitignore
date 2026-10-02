@@ -1,0 +1,8 @@
+art/signal-studio/.hyperframes/
+art/signal-studio/node_modules/
+art/signal-studio/renders/
+art/signal-studio/snapshots/
+art/signal-studio/*.mp4
+art/signal-studio/preview*.png
+art/signal-studio/mobile/
+art/signal-studio/.thumbnails/
